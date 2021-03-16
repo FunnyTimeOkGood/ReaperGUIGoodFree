@@ -1,0 +1,794 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+if getgenv().GUI_RUNNING then return end
+getgenv().GUI_RUNNING = true
+local ScreenGui = Instance.new("ScreenGui")
+local TrialGUI = Instance.new("Frame")
+local Home = Instance.new("Frame")
+local Info = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local DiscordCopy = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Title = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local Player = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local SpeedApply = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local SpeedText = Instance.new("TextBox")
+local UICorner_7 = Instance.new("UICorner")
+local Title_2 = Instance.new("TextLabel")
+local UICorner_8 = Instance.new("UICorner")
+local JumpApply = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local JumpText = Instance.new("TextBox")
+local UICorner_10 = Instance.new("UICorner")
+local NoClip = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Fly = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Bugs = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local DontClick = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local Scripts = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local Title_3 = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
+local OwlHub = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local AdoptMe = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local TowerOfHell = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local SkyWars = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local CMDX = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local PremiumInfo = Instance.new("TextLabel")
+local UICorner_22 = Instance.new("UICorner")
+local DontClickMe = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local InfiniteYield = Instance.new("TextButton")
+local UICorner_24 = Instance.new("UICorner")
+local Pages = Instance.new("Frame")
+local Home_2 = Instance.new("TextButton")
+local UICorner_25 = Instance.new("UICorner")
+local Scripts_2 = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local Player_2 = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
+local UICorner_28 = Instance.new("UICorner")
+local UICorner_29 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+TrialGUI.Name = "TrialGUI"
+TrialGUI.Parent = ScreenGui
+TrialGUI.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+TrialGUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TrialGUI.Position = UDim2.new(0.742999971, 0, 0.731000006, 0)
+TrialGUI.Size = UDim2.new(0, 408, 0, 226)
+
+Home.Name = "Home"
+Home.Parent = TrialGUI
+Home.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Home.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Home.Size = UDim2.new(0, 408, 0, 226)
+
+Info.Name = "Info"
+Info.Parent = Home
+Info.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Info.BackgroundTransparency = 0.800
+Info.Position = UDim2.new(0.245098025, 0, 0.234513268, 0)
+Info.Size = UDim2.new(0, 284, 0, 119)
+Info.Font = Enum.Font.TitilliumWeb
+Info.Text = ""
+Info.TextColor3 = Color3.fromRGB(0, 0, 0)
+Info.TextScaled = true
+Info.TextSize = 14.000
+Info.TextWrapped = true
+
+UICorner.Parent = Info
+
+DiscordCopy.Name = "DiscordCopy"
+DiscordCopy.Parent = Home
+DiscordCopy.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+DiscordCopy.BackgroundTransparency = 0.800
+DiscordCopy.Position = UDim2.new(0.414215684, 0, 0.836283207, 0)
+DiscordCopy.Size = UDim2.new(0, 133, 0, 19)
+DiscordCopy.Font = Enum.Font.TitilliumWeb
+DiscordCopy.Text = "Click to copy Discord!"
+DiscordCopy.TextColor3 = Color3.fromRGB(0, 0, 0)
+DiscordCopy.TextScaled = true
+DiscordCopy.TextSize = 14.000
+DiscordCopy.TextWrapped = true
+
+UICorner_2.Parent = DiscordCopy
+
+UICorner_3.Parent = Home
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient.Parent = Home
+
+Title.Name = "Title"
+Title.Parent = Home
+Title.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Title.BackgroundTransparency = 0.800
+Title.Size = UDim2.new(0, 408, 0, 41)
+Title.Font = Enum.Font.TitilliumWeb
+Title.Text = "Reaper Hub"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UICorner_4.Parent = Title
+
+Player.Name = "Player"
+Player.Parent = TrialGUI
+Player.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Player.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Player.Position = UDim2.new(0.00280402694, 0, -0.00351330242, 0)
+Player.Size = UDim2.new(0, 407, 0, 225)
+Player.Visible = false
+
+UICorner_5.Parent = Player
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Parent = Player
+
+SpeedApply.Name = "SpeedApply"
+SpeedApply.Parent = Player
+SpeedApply.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+SpeedApply.BackgroundTransparency = 0.800
+SpeedApply.Position = UDim2.new(0.24570024, 0, 0.573333323, 0)
+SpeedApply.Size = UDim2.new(0, 72, 0, 43)
+SpeedApply.Font = Enum.Font.TitilliumWeb
+SpeedApply.Text = "Apply Speed"
+SpeedApply.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedApply.TextScaled = true
+SpeedApply.TextSize = 14.000
+SpeedApply.TextWrapped = true
+
+UICorner_6.Parent = SpeedApply
+
+SpeedText.Name = "SpeedText"
+SpeedText.Parent = Player
+SpeedText.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+SpeedText.BackgroundTransparency = 0.800
+SpeedText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpeedText.Position = UDim2.new(0.24570024, 0, 0.271111131, 0)
+SpeedText.Size = UDim2.new(0, 72, 0, 43)
+SpeedText.Font = Enum.Font.TitilliumWeb
+SpeedText.PlaceholderText = "(Speed)"
+SpeedText.Text = ""
+SpeedText.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedText.TextScaled = true
+SpeedText.TextSize = 14.000
+SpeedText.TextWrapped = true
+
+UICorner_7.Parent = SpeedText
+
+Title_2.Name = "Title"
+Title_2.Parent = Player
+Title_2.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Title_2.BackgroundTransparency = 0.800
+Title_2.Size = UDim2.new(0, 408, 0, 41)
+Title_2.Font = Enum.Font.TitilliumWeb
+Title_2.Text = "Reaper Hub"
+Title_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_2.TextScaled = true
+Title_2.TextSize = 14.000
+Title_2.TextWrapped = true
+
+UICorner_8.Parent = Title_2
+
+JumpApply.Name = "JumpApply"
+JumpApply.Parent = Player
+JumpApply.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+JumpApply.BackgroundTransparency = 0.800
+JumpApply.Position = UDim2.new(0.515970528, 0, 0.573333323, 0)
+JumpApply.Size = UDim2.new(0, 72, 0, 43)
+JumpApply.Font = Enum.Font.TitilliumWeb
+JumpApply.Text = "Apply Jump"
+JumpApply.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpApply.TextScaled = true
+JumpApply.TextSize = 14.000
+JumpApply.TextWrapped = true
+
+UICorner_9.Parent = JumpApply
+
+JumpText.Name = "JumpText"
+JumpText.Parent = Player
+JumpText.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+JumpText.BackgroundTransparency = 0.800
+JumpText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpText.Position = UDim2.new(0.515970469, 0, 0.271111101, 0)
+JumpText.Size = UDim2.new(0, 72, 0, 43)
+JumpText.Font = Enum.Font.TitilliumWeb
+JumpText.PlaceholderText = "(Jump)"
+JumpText.Text = ""
+JumpText.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpText.TextScaled = true
+JumpText.TextSize = 14.000
+JumpText.TextWrapped = true
+
+UICorner_10.Parent = JumpText
+
+NoClip.Name = "NoClip"
+NoClip.Parent = Player
+NoClip.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+NoClip.BackgroundTransparency = 0.800
+NoClip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NoClip.Position = UDim2.new(0.759213746, 0, 0.271111101, 0)
+NoClip.Size = UDim2.new(0, 72, 0, 43)
+NoClip.Font = Enum.Font.TitilliumWeb
+NoClip.Text = "NoClip(C)"
+NoClip.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoClip.TextSize = 26.000
+NoClip.TextWrapped = true
+
+UICorner_11.Parent = NoClip
+
+Fly.Name = "Fly"
+Fly.Parent = Player
+Fly.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Fly.BackgroundTransparency = 0.800
+Fly.Position = UDim2.new(0.759213746, 0, 0.573333323, 0)
+Fly.Size = UDim2.new(0, 72, 0, 43)
+Fly.Font = Enum.Font.TitilliumWeb
+Fly.Text = "Flight(V)"
+Fly.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fly.TextSize = 25.000
+Fly.TextWrapped = true
+
+UICorner_12.Parent = Fly
+
+Bugs.Name = "Bugs"
+Bugs.Parent = Player
+Bugs.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Bugs.BackgroundTransparency = 0.800
+Bugs.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Bugs.Position = UDim2.new(0.24570024, 0, 0.857777774, 0)
+Bugs.Size = UDim2.new(0, 281, 0, 22)
+Bugs.Font = Enum.Font.SpecialElite
+Bugs.Text = "Found bugs? DM me ReaperHacks#0001"
+Bugs.TextColor3 = Color3.fromRGB(0, 0, 0)
+Bugs.TextSize = 14.000
+
+UICorner_13.Parent = Bugs
+
+DontClick.Name = "DontClick"
+DontClick.Parent = Player
+DontClick.BackgroundColor3 = Color3.fromRGB(59, 59, 59)
+DontClick.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DontClick.Position = UDim2.new(0.24570024, 0, 0.857777774, 0)
+DontClick.Size = UDim2.new(0, 281, 0, 22)
+DontClick.Font = Enum.Font.TitilliumWeb
+DontClick.Text = "Don't Click me :)"
+DontClick.TextColor3 = Color3.fromRGB(0, 0, 0)
+DontClick.TextScaled = true
+DontClick.TextSize = 14.000
+DontClick.TextWrapped = true
+
+UICorner_14.Parent = DontClick
+
+Scripts.Name = "Scripts"
+Scripts.Parent = TrialGUI
+Scripts.BackgroundColor3 = Color3.fromRGB(44, 44, 44)
+Scripts.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Scripts.Position = UDim2.new(0.00300000003, 0, -0.00400000019, 0)
+Scripts.Size = UDim2.new(0, 407, 0, 225)
+Scripts.Visible = false
+
+UICorner_15.Parent = Scripts
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_3.Parent = Scripts
+
+Title_3.Name = "Title"
+Title_3.Parent = Scripts
+Title_3.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Title_3.BackgroundTransparency = 0.800
+Title_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_3.Size = UDim2.new(0, 408, 0, 41)
+Title_3.Font = Enum.Font.TitilliumWeb
+Title_3.Text = "Reaper Hub"
+Title_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title_3.TextScaled = true
+Title_3.TextSize = 14.000
+Title_3.TextWrapped = true
+
+UICorner_16.Parent = Title_3
+
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = Scripts
+OwlHub.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+OwlHub.BackgroundTransparency = 0.800
+OwlHub.Position = UDim2.new(0.235000044, 0, 0.242999941, 0)
+OwlHub.Size = UDim2.new(0, 78, 0, 50)
+OwlHub.Font = Enum.Font.TitilliumWeb
+OwlHub.Text = "Owl Hub"
+OwlHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+OwlHub.TextSize = 26.000
+OwlHub.TextWrapped = true
+
+UICorner_17.Parent = OwlHub
+
+AdoptMe.Name = "AdoptMe"
+AdoptMe.Parent = Scripts
+AdoptMe.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+AdoptMe.BackgroundTransparency = 0.800
+AdoptMe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+AdoptMe.Position = UDim2.new(0.764127731, 0, 0.239999995, 0)
+AdoptMe.Size = UDim2.new(0, 78, 0, 50)
+AdoptMe.Font = Enum.Font.TitilliumWeb
+AdoptMe.Text = "Adopt Me"
+AdoptMe.TextColor3 = Color3.fromRGB(0, 0, 0)
+AdoptMe.TextSize = 24.000
+AdoptMe.TextWrapped = true
+
+UICorner_18.Parent = AdoptMe
+
+TowerOfHell.Name = "TowerOfHell"
+TowerOfHell.Parent = Scripts
+TowerOfHell.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+TowerOfHell.BackgroundTransparency = 0.800
+TowerOfHell.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TowerOfHell.Position = UDim2.new(0.233415231, 0, 0.568888903, 0)
+TowerOfHell.Size = UDim2.new(0, 78, 0, 50)
+TowerOfHell.Font = Enum.Font.TitilliumWeb
+TowerOfHell.Text = "Tower Of Hell"
+TowerOfHell.TextColor3 = Color3.fromRGB(0, 0, 0)
+TowerOfHell.TextSize = 18.000
+TowerOfHell.TextWrapped = true
+
+UICorner_19.Parent = TowerOfHell
+
+SkyWars.Name = "SkyWars"
+SkyWars.Parent = Scripts
+SkyWars.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+SkyWars.BackgroundTransparency = 0.800
+SkyWars.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SkyWars.Position = UDim2.new(0.50859952, 0, 0.568888903, 0)
+SkyWars.Size = UDim2.new(0, 78, 0, 50)
+SkyWars.Font = Enum.Font.TitilliumWeb
+SkyWars.Text = "Sky Wars"
+SkyWars.TextColor3 = Color3.fromRGB(0, 0, 0)
+SkyWars.TextSize = 24.000
+SkyWars.TextWrapped = true
+
+UICorner_20.Parent = SkyWars
+
+CMDX.Name = "CMDX"
+CMDX.Parent = Scripts
+CMDX.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+CMDX.BackgroundTransparency = 0.800
+CMDX.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CMDX.Position = UDim2.new(0.764127731, 0, 0.568888903, 0)
+CMDX.Size = UDim2.new(0, 78, 0, 50)
+CMDX.Font = Enum.Font.TitilliumWeb
+CMDX.Text = "CMD X"
+CMDX.TextColor3 = Color3.fromRGB(0, 0, 0)
+CMDX.TextSize = 20.000
+
+UICorner_21.Parent = CMDX
+
+PremiumInfo.Name = "PremiumInfo"
+PremiumInfo.Parent = Scripts
+PremiumInfo.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+PremiumInfo.BackgroundTransparency = 0.800
+PremiumInfo.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PremiumInfo.Position = UDim2.new(0.233415231, 0, 0.857777774, 0)
+PremiumInfo.Size = UDim2.new(0, 294, 0, 26)
+PremiumInfo.Font = Enum.Font.TitilliumWeb
+PremiumInfo.Text = "Hi there! When/if you buy Premium ALOT more features will be unlocked!"
+PremiumInfo.TextColor3 = Color3.fromRGB(255, 0, 0)
+PremiumInfo.TextScaled = true
+PremiumInfo.TextSize = 14.000
+PremiumInfo.TextWrapped = true
+
+UICorner_22.Parent = PremiumInfo
+
+DontClickMe.Name = "DontClickMe"
+DontClickMe.Parent = Scripts
+DontClickMe.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+DontClickMe.Position = UDim2.new(0.233415231, 0, 0.857777774, 0)
+DontClickMe.Size = UDim2.new(0, 294, 0, 26)
+DontClickMe.Font = Enum.Font.TitilliumWeb
+DontClickMe.Text = "Don't click me :)"
+DontClickMe.TextColor3 = Color3.fromRGB(0, 0, 0)
+DontClickMe.TextScaled = true
+DontClickMe.TextSize = 14.000
+DontClickMe.TextWrapped = true
+
+UICorner_23.Parent = DontClickMe
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = Scripts
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+InfiniteYield.BackgroundTransparency = 0.800
+InfiniteYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.Position = UDim2.new(0.50859952, 0, 0.239999995, 0)
+InfiniteYield.Size = UDim2.new(0, 78, 0, 50)
+InfiniteYield.Font = Enum.Font.TitilliumWeb
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.TextSize = 18.000
+InfiniteYield.TextWrapped = true
+
+UICorner_24.Parent = InfiniteYield
+
+Pages.Name = "Pages"
+Pages.Parent = TrialGUI
+Pages.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Pages.BackgroundTransparency = 1.000
+Pages.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Pages.Position = UDim2.new(0.0255061127, 0, 0.28318584, 0)
+Pages.Size = UDim2.new(0, 66, 0, 141)
+
+Home_2.Name = "Home"
+Home_2.Parent = Pages
+Home_2.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Home_2.BackgroundTransparency = 0.800
+Home_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Home_2.Position = UDim2.new(0.0909090936, 0, -0.000577453524, 0)
+Home_2.Size = UDim2.new(0, 54, 0, 37)
+Home_2.Font = Enum.Font.TitilliumWeb
+Home_2.Text = "Home"
+Home_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Home_2.TextScaled = true
+Home_2.TextSize = 14.000
+Home_2.TextWrapped = true
+
+UICorner_25.Parent = Home_2
+
+Scripts_2.Name = "Scripts"
+Scripts_2.Parent = Pages
+Scripts_2.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Scripts_2.BackgroundTransparency = 0.800
+Scripts_2.BorderColor3 = Color3.fromRGB(255, 247, 248)
+Scripts_2.Position = UDim2.new(0.0909090936, 0, 0.736970067, 0)
+Scripts_2.Size = UDim2.new(0, 54, 0, 37)
+Scripts_2.Font = Enum.Font.TitilliumWeb
+Scripts_2.Text = "Scripts"
+Scripts_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Scripts_2.TextScaled = true
+Scripts_2.TextSize = 14.000
+Scripts_2.TextWrapped = true
+
+UICorner_26.Parent = Scripts_2
+
+Player_2.Name = "Player"
+Player_2.Parent = Pages
+Player_2.BackgroundColor3 = Color3.fromRGB(131, 131, 131)
+Player_2.BackgroundTransparency = 0.800
+Player_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Player_2.Position = UDim2.new(0.0909090936, 0, 0.363021523, 0)
+Player_2.Size = UDim2.new(0, 54, 0, 37)
+Player_2.Font = Enum.Font.TitilliumWeb
+Player_2.Text = "Player"
+Player_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Player_2.TextScaled = true
+Player_2.TextSize = 14.000
+Player_2.TextWrapped = true
+
+UICorner_27.Parent = Player_2
+
+UICorner_28.Parent = Pages
+
+UICorner_29.Parent = TrialGUI
+
+-- Scripts:
+
+local function TTNI_fake_script() -- Info.AboutScript 
+	local script = Instance.new('LocalScript', Info)
+
+	script.Parent.Text = "Hi " .. game.Players.LocalPlayer.Name .. ", welcome to Reaper Hub [TRIAL] this will be a small preview on the premium if you would like to purchase premium please join the Discord with the button below. Press [P] to toggle!"
+end
+coroutine.wrap(TTNI_fake_script)()
+local function JIHX_fake_script() -- Home.InviteCopy 
+	local script = Instance.new('LocalScript', Home)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.DiscordCopy.MouseButton1Click:Connect(function()
+		setclipboard('https://discord.gg/HJabVmd')
+	end)
+end
+coroutine.wrap(JIHX_fake_script)()
+local function DZCSO_fake_script() -- Player.SpeedScript 
+	local script = Instance.new('LocalScript', Player)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.SpeedApply.MouseButton1Click:Connect(function()
+		player.Character.Humanoid.WalkSpeed = script.Parent.SpeedText1.Text
+	end)
+end
+coroutine.wrap(DZCSO_fake_script)()
+local function IHDEGU_fake_script() -- Player.JumpApply 
+	local script = Instance.new('LocalScript', Player)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.JumpApply.MouseButton1Click:Connect(function()
+		player.Character.Humanoid.JumpPower = script.Parent.JumpText1.Text
+	end)
+end
+coroutine.wrap(IHDEGU_fake_script)()
+local function CMUX_fake_script() -- Player.NoClipScript 
+	local script = Instance.new('LocalScript', Player)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.NoClip.MouseButton1Click:Connect(function()
+		noclip = false
+		game:GetService('RunService').Stepped:connect(function()
+			if noclip then
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+			end
+		end)
+		plr = game.Players.LocalPlayer
+		mouse = plr:GetMouse()
+		mouse.KeyDown:connect(function(key)
+	
+			if key == "c" then
+				noclip = not noclip
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+			end
+		end)
+		print('Loaded')
+		print('Press "c" to noclip')
+	end)
+	
+end
+coroutine.wrap(CMUX_fake_script)()
+local function EDVJCDV_fake_script() -- Player.FlyScript 
+	local script = Instance.new('LocalScript', Player)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.Fly.MouseButton1Click:Connect(function()
+	
+	
+		_G.FLYING = false
+		local LP = game:service('Players').LocalPlayer
+		local T = LP.Character.UpperTorso
+		local CONTROL = {F = 0, B = 0, L = 0, R = 0}
+		local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+		local SPEED = 5
+		local MOUSE = LP:GetMouse()
+		local Active = false
+	
+	
+		local function FLY()
+			_G.FLYING = true
+			local BG = Instance.new('BodyGyro', T)
+			local BV = Instance.new('BodyVelocity', T)
+			BG.P = 9e4
+			BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+			BG.cframe = T.CFrame
+			BV.velocity = Vector3.new(0, 0.1, 0)
+			BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
+	
+	
+			spawn(function()
+				repeat wait()
+					LP.Character.Humanoid.PlatformStand = true
+					if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
+						SPEED = 50
+					elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
+						SPEED = 0
+					end
+					if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
+						BV.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+						lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
+					elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
+						BV.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+					else
+						BV.velocity = Vector3.new(0, 0.1, 0)
+					end
+					BG.cframe = game.Workspace.CurrentCamera.CoordinateFrame
+				until not _G.FLYING
+				CONTROL = {F = 0, B = 0, L = 0, R = 0}
+				lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+				SPEED = 0
+				BG:destroy()
+				BV:destroy()
+				LP.Character.Humanoid.PlatformStand = false
+			end)
+		end
+	
+		MOUSE.KeyDown:connect(function(KEY)
+			if KEY:lower() == 'w' then
+				CONTROL.F = 1
+			elseif KEY:lower() == 's' then
+				CONTROL.B = -1
+			elseif KEY:lower() == 'a' then
+				CONTROL.L = -1 
+			elseif KEY:lower() == 'd' then 
+				CONTROL.R = 1
+			elseif KEY:lower() == 'v' then
+				if Active == false then
+					Active = true
+					FLY()
+				elseif Active == true then
+					Active = false
+					_G.FLYING = false
+				end
+			end
+		end)
+	
+		MOUSE.KeyUp:connect(function(KEY)
+			if KEY:lower() == 'w' then
+				CONTROL.F = 0
+			elseif KEY:lower() == 's' then
+				CONTROL.B = 0
+			elseif KEY:lower() == 'a' then
+				CONTROL.L = 0
+			elseif KEY:lower() == 'd' then
+				CONTROL.R = 0
+			end
+		end)
+	end)
+	
+end
+coroutine.wrap(EDVJCDV_fake_script)()
+local function UOFJJEG_fake_script() -- Player.DontClickScript 
+	local script = Instance.new('LocalScript', Player)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.DontClick.MouseButton1Click:Connect(function()
+		script.Parent.DontClick.Visible = false
+		wait (2)
+		script.Parent.DontClick.Visible = true
+	end)
+end
+coroutine.wrap(UOFJJEG_fake_script)()
+local function DUEJT_fake_script() -- Scripts.OwlHubScript 
+	local script = Instance.new('LocalScript', Scripts)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.OwlHub.MouseButton1Click:Connect(function()
+		local old
+		old = hookfunction(game.HttpGetAsync, function(inst, url, state)
+			url = url:gsub('CriShoux', 'SiLeNSwOrD')
+			return old(inst, url, state)
+		end)
+	
+		local old2
+		old2 = hookfunction(game.HttpGet, function(inst, url, state)
+			url = url:gsub('CriShoux', 'SiLeNSwOrD')
+			return old2(inst, url, state)
+		end)
+	
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/SiLeNSwOrD/OwlHub/master/OwlHub.txt"))()
+	end)
+end
+coroutine.wrap(DUEJT_fake_script)()
+local function IIHW_fake_script() -- Scripts.AdoptMeScript 
+	local script = Instance.new('LocalScript', Scripts)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.AdoptMe.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/Z3iAXASr", true))()
+	end)
+end
+coroutine.wrap(IIHW_fake_script)()
+local function ZSVAME_fake_script() -- Scripts.TowerOfHellScript 
+	local script = Instance.new('LocalScript', Scripts)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.TowerOfHell.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/iiProductionz/Floater-Scripts/main/WaifuEdition/Tower%20Of%20Hell"))()
+	end)
+end
+coroutine.wrap(ZSVAME_fake_script)()
+local function QLPNX_fake_script() -- Scripts.SkyWarsScript 
+	local script = Instance.new('LocalScript', Scripts)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.SkyWars.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/Loadstring9VHD6Wmyi82n", true))()
+	end)
+end
+coroutine.wrap(QLPNX_fake_script)()
+local function PUNFL_fake_script() -- Scripts.CMDXScript 
+	local script = Instance.new('LocalScript', Scripts)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.CMDX.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+	end)
+end
+coroutine.wrap(PUNFL_fake_script)()
+local function VLLB_fake_script() -- Scripts.DontClickMeScript 
+	local script = Instance.new('LocalScript', Scripts)
+
+	script.Parent.DontClickMe.MouseButton1Click:Connect(function()
+		script.Parent.DontClickMe.Visible = false
+		wait (5)
+		script.Parent.DontClickMe.Visible = true
+	end)
+end
+coroutine.wrap(VLLB_fake_script)()
+local function GCNNJSQ_fake_script() -- Scripts.InfiniteYieldScript 
+	local script = Instance.new('LocalScript', Scripts)
+
+	local player = game.Players.LocalPlayer
+	script.Parent.InfiniteYield.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end)
+end
+coroutine.wrap(GCNNJSQ_fake_script)()
+local function CGLHFIQ_fake_script() -- Home_2.HomeScript 
+	local script = Instance.new('Script', Home_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.Scripts.Visible = false
+		script.Parent.Parent.Parent.Home.Visible = true
+		script.Parent.Parent.Parent.Player.Visible = false
+	end)
+end
+coroutine.wrap(CGLHFIQ_fake_script)()
+local function RGJX_fake_script() -- Scripts_2.ScriptsScript 
+	local script = Instance.new('Script', Scripts_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.Home.Visible = false
+		script.Parent.Parent.Parent.Scripts.Visible = true
+		script.Parent.Parent.Parent.Player.Visible = false
+	end)
+end
+coroutine.wrap(RGJX_fake_script)()
+local function SADUII_fake_script() -- Player_2.PlayerScript 
+	local script = Instance.new('Script', Player_2)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		script.Parent.Parent.Parent.Home.Visible = false
+		script.Parent.Parent.Parent.Player.Visible = true
+		script.Parent.Parent.Parent.Scripts.Visible = false
+	end)
+end
+coroutine.wrap(SADUII_fake_script)()
+local function MJOUJ_fake_script() -- TrialGUI.ToggleScript 
+	local script = Instance.new('LocalScript', TrialGUI)
+
+	local isVisible = true
+	local Player = game.Players.LocalPlayer:GetMouse()
+	
+	Player.KeyDown:Connect(function(key)
+		if key:byte() == 112 then
+			if isVisible == true then
+				script.Parent.Home.Visible = false
+				script.Parent.Pages.Visible = false
+				script.Parent.Player.Visible = false
+				script.Parent.Scripts.Visible = false
+				isVisible = false
+			elseif isVisible == false then
+				script.Parent.Home.Visible = true
+				script.Parent.Pages.Visible = true
+				script.Parent.Player.Visible = true
+				script.Parent.Scripts.Visible = true
+				isVisible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(MJOUJ_fake_script)()
+local function YWTGQP_fake_script() -- TrialGUI.Script 
+	local script = Instance.new('Script', TrialGUI)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(YWTGQP_fake_script)()
